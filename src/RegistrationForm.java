@@ -100,13 +100,7 @@ public class RegistrationForm extends JDialog {
             // to execute the sql query
             // insert row into to the table
 
-            int addedRows = preparedStatement.executeUpdate();
-            if (addedRows > 0){
-                user = new User();
-                user.name = name;
-                user.email = email;
-                user.password = password;
-            }
+
 
             // closing all connections and ending processes
             statement.close();
